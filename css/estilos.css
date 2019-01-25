@@ -11,6 +11,7 @@
 }
 body{
 	font-family: 'Open Sans', sans-serif;
+
 }
 
 /*Encabezado*/
@@ -25,10 +26,13 @@ header{
 	left: 0;
 	z-index: 100;
 }
+
+/*Para aliniar cuando se haga pequeño*/
 .contenedor{
 	width: 98%;
 	margin: auto;
 }
+
 .contenedor img{
 	float: left;
 	margin-right: 5px;
@@ -58,18 +62,24 @@ footer .contenedor {
 	justify-content: center;
 	padding-bottom: 25px;
 }
+
+/*Footer - */
  .copy{
  	font-size: 20px;
  }
  .sociales{
+ 	
  	width: 100%;
  	text-align: center;
  	font-size: 28px;
+ 	margin-left: 200px; 
  }
  .sociales a{
  	color: #333;
  	text-decoration: none;
  }
+
+ /*Responsive*/
  @media (min-width: 768px){
  	.sociales{
  		width: auto;
@@ -84,14 +94,23 @@ footer .contenedor {
  	}
  }
 
- /*Contact Me*/
 
- .section {
-	background-color: #fff;
+
+ /*Contactanos*/
+
+#contactanos {
+	background-color: #34343434;
 	padding: 15px;
 	margin-bottom: 10px;
 	border-radius: 10px;
+	margin: 20px;
+	width: 800px;
+	display: inline-block;
+	float: left;
+
+
 }
+
 textarea {
 	height: 100px;
 }
@@ -103,8 +122,9 @@ input, textarea {
 	background-color: #efefef;
 	color: #787575;
 	border-radius: 5px;
-	width: 70%;
+	width: 750px;
 	outline: none;
+	
 }
 .submit {
 	background-color: #3fb6b2;
@@ -116,7 +136,19 @@ input, textarea {
 	outline: none;
 	margin: 0;
 	font-weight: bold;
+	
 }
 .submit:hover {
 	background-color: #43a09d;
 }
+
+
+/*Mapa*/
+iframe{
+	display: absolute;
+	float: right;
+	margin-right: 30px;
+
+
+}
+
