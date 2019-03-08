@@ -9,6 +9,11 @@ header label{
 	cursor: pointer;
 }
 
+.contenedor #LetraLogo{
+text-decoration: none;
+color: #fff;
+}
+
 /*Menú Responsive - Desplegable al hacer click*/
 .menu{
 	position: absolute;
