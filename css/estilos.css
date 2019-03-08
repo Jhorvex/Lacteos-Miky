@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url(menu.css);
 @import url(banner.css);
@@ -38,9 +39,11 @@ header{
 	margin-right: 5px;
 }
 
-h1{
+.contenedor h1{
 	float: left;
-	margin-top: 5px;
+	margin-left: 4px;
+	margin-top: 10px;
+	font-family: 'Parisienne', cursive;
 }
 header .contenedor{
 	display: table;
@@ -55,22 +58,7 @@ section{
 
 #bienvenidos {
 	text-align: center;
-
 }
-
-#bienvenidos article{
-		width: 33%;
-		display: inline-block
-}
-
-
-#bienvenidos article img{
-	width: 100%;
-    max-width: 280px;
-    float: center;
-    margin-right: 5px;
-}
-
 footer .contenedor {
 	display: flex;
 	flex-wrap: wrap;
@@ -94,26 +82,12 @@ footer .contenedor {
  	text-decoration: none;
  }
 
- /*Responsive*/
- @media (min-width: 768px){
- 	.sociales{
- 		width: auto;
- 	}
- 	footer .contenedor{
- 		justify-content: space-between;
- 	}
- }
- @media (min-width: 1024px){
- 	.contenedor{
- 		width: 1024px
- 	}
- }
 
 
 
- /*Contactanos*/
+ /*Contactanos
 
-#contactanos {
+.col-content {
 	background-color: #34343434;
 	padding: 15px;
 	margin-bottom: 10px;
@@ -123,12 +97,21 @@ footer .contenedor {
 	display: inline-block;
 	float: left;
 
-
 }
+*/
+
 
 textarea {
 	height: 100px;
 }
+
+.col-content h3{
+font-size: 30px;
+margin-left: 5px;
+margin-top: 20px;
+margin-bottom: 0px;
+}
+
 input, textarea {
 	margin-bottom: 10px;
 	font-size: 11pt;
@@ -137,9 +120,10 @@ input, textarea {
 	background-color: #efefef;
 	color: #787575;
 	border-radius: 5px;
-	width: 750px;
+	width: 98%;
 	outline: none;
-	
+
+
 }
 .submit {
 	background-color: #3fb6b2;
@@ -157,13 +141,321 @@ input, textarea {
 	background-color: #43a09d;
 }
 
-
-/*Mapa*/
-iframe{
-	display: absolute;
-	float: right;
-	margin-right: 30px;
-
+/*Envoltura de Video*/
+.col-content {
+	background-color: #34343434;
+	display: inline-block;
+	width: 45%;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	margin: 20px;
+	margin-left: 3%;
+	float: left;
 
 }
 
+.col-multimedia{
+	display: inline-block;
+	background-color: #34343434;
+	width: 45%;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	margin: 20px;
+	margin-right: 3%;
+	vertical-align: top;
+	
+}
+.col-multimedia video{
+	width: 98%;
+	height: 315px;
+
+}
+
+
+/*Mapa*/
+.col-mapa{
+	display: inline-block;
+	background-color: #34343434;
+	width: 90%;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	margin: 20px;
+	vertical-align: top;
+	margin-left: 5%;
+	}
+	.col-mapa iframe{
+		width: 100%;
+	}
+	.sociales{
+	 	width: auto;
+	 	}
+	footer .contenedor{
+	 	justify-content: space-between;
+	}
+
+ /*Responsive*/
+ @media (max-width: 768px){
+ 	
+ 	/* Pagina Index */
+		#bienvenidos{
+		border-radius: 20px;
+		color: #2984bd;
+		width: 84%;
+		display: inline-block;
+		margin-left: 8%;
+		background: #ffffff;
+		}
+		
+		.bienvenidos_1{
+		display: inline-block;
+		width: 90%;
+		margin-top: 5%;
+		margin-left: 5%;
+		text-align: justify;
+		}
+
+		.bienvenidos_1 h2{
+		text-align: center;
+		}
+
+		.bienvenidos_2{
+		display: inline-block;
+		width: 100%;
+		margin-left:  0.9%;
+		margin-top: 5%;
+		margin-bottom: 1%;
+		}
+		.bienvenidos_2 img{
+		width: 100%;
+		border-radius: 5%;
+		}
+		/*Nuestra Historia*/
+		#blog_Contenido{
+		width: 100%;
+		display: inline-block;
+		color: white;
+		background: #2984bd;
+		margin-bottom: 2%;	
+		}
+
+		/* Pagina Contactos */
+		.col-content {
+			background-color: #34343434;
+			width: 94%;
+			padding: 15px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			margin: 10px;
+			float: left;
+			margin-left: 3%;
+		}
+
+		.col-multimedia{
+			display: inline-block;
+			background-color: #34343434;
+			width: 94%;
+			padding: 15px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			margin: 10px;
+			vertical-align: top;
+			margin-left: 3%; 
+		}
+		.col-multimedia video{
+			width: 96%;
+			height: 255px;
+
+		}
+
+
+		/*Mapa*/
+		.col-mapa{
+			display: inline-block;
+			background-color: #34343434;
+			width: 94%;
+			padding: 15px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+		1	margin: 10px;
+			vertical-align: top;
+			margin-left: 3%;
+		}
+
+	 	.sociales{
+	 		width: auto;
+	 	}
+	 	footer .contenedor{
+	 		justify-content: space-between;
+	 	}
+
+ }
+ @media (min-width: 1024px){
+ 	.contenedor{
+ 		width: 1024px
+ 		background: red;
+ 	}
+ }
+
+
+ @media only screen and (max-width: 600px)
+ 	{
+ 		body{
+ 		background: white;	
+ 		}
+ 		/* Pagina Contactos */
+		.col-content {
+			background-color: #34343434;
+			display: inline-block;
+			width: 96%;
+			padding: 15px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			margin: 10px;
+			float: left;
+		}
+
+		.col-multimedia{
+			display: inline-block;
+			background-color: #34343434;
+			width: 96%;
+			padding: 15px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			margin: 10px;
+			vertical-align: top;
+		}
+		.col-multimedia video{
+			width: 96%;
+			height: 255px;
+
+		}
+
+
+		/*Mapa*/
+		.col-mapa{
+			display: inline-block;
+			background-color: #34343434;
+			width: 96%;
+			padding: 15px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			margin: 10px;
+			vertical-align: top;
+		}
+		/* Footer */
+ 		.sociales{
+ 			width: 21%;
+ 			margin-left: 27px;
+ 			margin-top: 11px;
+ 		}
+
+ 		/* Pagina Index */
+		#bienvenidos{
+		border-radius: 20px;
+		color: #2984bd;
+		width: 84%;
+		display: inline-block;
+		margin-left: 8%;
+		background: #ffffff;
+		}
+		
+		.bienvenidos_1{
+		display: inline-block;
+		width: 90%;
+		margin-top: 5%;
+		margin-left: 5%;
+		text-align: justify;
+		}
+
+		.bienvenidos_1 h2{
+		text-align: center;
+		}
+
+		.bienvenidos_2{
+		display: inline-block;
+		width: 100%;
+		margin-left:  0.9%;
+		margin-top: 5%;
+		margin-bottom: 1%;
+		}
+		.bienvenidos_2 img{
+		width: 100%;
+		border-radius: 5%;
+		}
+		/*Nuestra Historia*/
+		#blog_Contenido{
+		width: 100%;
+		display: inline-block;
+		color: white;
+		background: #2984bd;
+		margin-bottom: 2%;	
+		}
+
+		/* Productos */
+		/*Informacion de las Categorias*/
+				
+		#info_productos .modal h3{
+			font-size: 40px;
+			text-align: center;
+			margin: 30px 0 0;
+			color: white;
+
+		}
+		
+		.imagen a{
+			color: #fff;
+			font-size: 40px;
+			text-decoration: none;
+			margin: 0 10px;
+		}
+
+		.imagen a:nth-child(2){
+			margin:0;
+			height: 80%;
+			flex-shrink: 2; 
+
+		}
+
+		.imagen a img{
+			width: 300px;
+			height: 100%;
+			max-width: 100%;
+			border: 7px solid #2984bd;
+			box-sizing: border-box;
+			border-radius: 5%;
+			margin-top: 0px;
+
+		}
+
+		.modal .cerrar{
+			display: block;
+			background: #fff;
+			width: 35px;
+			height: 35px;
+			margin:	15px auto;
+			text-align: center;
+			text-decoration: none;
+			font-size: 25px;
+			color: #000;
+			padding: 5px;
+			border-radius: 50%;
+			line-height: 25px;
+		}
+
+		#info_productos .modal p{
+			font-size: 15px;
+			text-align: center;
+			width: 50%;
+			margin-top: 0;
+			margin-left: 25%;
+			color: white;
+
+		}
+
+
+	}
+
+ 
