@@ -55,7 +55,22 @@ section{
 
 #bienvenidos {
 	text-align: center;
+
 }
+
+#bienvenidos article{
+		width: 33%;
+		display: inline-block
+}
+
+
+#bienvenidos article img{
+	width: 100%;
+    max-width: 280px;
+    float: center;
+    margin-right: 5px;
+}
+
 footer .contenedor {
 	display: flex;
 	flex-wrap: wrap;
