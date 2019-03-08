@@ -10,8 +10,8 @@
 <body>
 	<header>
 		<div class="contenedor"> 
-			<img width="70px" src="./img/logo.png">
-			<h1>Lacteos Miky</h1>
+			<a href="./index.html"><img width="70px" src="./img/Logo_Blanco.png"></a>
+			<a id="LetraLogo" href="./index.html"><h1>Lacteos Miky</h1></a>
 			<input type="checkbox" id="menu-bar">
 			<label class="icon-menu" for="menu-bar"></label>
 			<nav class="menu">
@@ -37,19 +37,53 @@
 					
 			<div class="contenedor">
 				<div class="categoria">
-					<img src="./img/queso.jpg" alt="">
+					<a href="#imgQueso"><img src="./img/queso.jpg" alt=""></a>
 					<h4>Queso</h4>
 				</div>
 				<div class="categoria">
-					<img src="./img/yogurt.jpg" alt="">
+					<a href="#imgYogurt"><img src="./img/yogurt.jpg" alt=""></a>
 					<h4>Yogurt</h4>
 				</div>
 				<div class="categoria">
-					<img src="./img/helado2.jpg" alt="">
+					<a href="#imgHelado"><img src="./img/helado2.jpg" alt=""></a>
 					<h4>Helado</h4>
+					<p id="Productos_Quesos"></p>
 				</div>
 			</div>
 			
+			
+			<div class="modal" id="imgQueso">
+				<h3>Categoría Queso</h3>
+				<div class="imagen">
+					<a href="#imgHelado">&#60;</a>
+					<a href="#imgQueso"><img width="350px" src="./img/queso.jpg"></a>
+					<a href="#imgYogurt">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="imgYogurt">
+				<h3>Categoría Yogurt</h3>
+				<div class="imagen">
+					<a href="#imgQueso">&#60;</a>
+					<a href="#imgYogurt"><img width="350px" src="./img/yogurt.jpg"></a>
+					<a href="#imgHelado">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="imgHelado">
+				<h3>Categoría Queso</h3>
+				<div class="imagen">
+					<a href="#imgYogurt">&#60;</a>
+					<a href="#imgHelado"><img width="350px" src="./img/helado2.jpg"></a>
+					<a href="#imgQueso">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+
+
 		</section>
 		<section id="info_productos_c1">
 			<h3>"QUESOS"
@@ -57,16 +91,17 @@
 					
 			<div class="contenedor">
 				<div class="categoria">
+					<img src="./img/queso1.png" alt="">
+					<h4>Queso Molde</h4>
+				</div>
+				<div class="categoria">
+					<img src="./img/queso3.png" alt="">
+					<h4>Queso Fresco</h4>
+				</div>
+				<div class="categoria">
 					<img src="./img/queso.jpg" alt="">
-					<h4>Queso</h4>
-				</div>
-				<div class="categoria">
-					<img src="./img/yogurt.jpg" alt="">
-					<h4>Yogurt</h4>
-				</div>
-				<div class="categoria">
-					<img src="./img/helado2.jpg" alt="">
-					<h4>Helado</h4>
+					<h4>Quesos</h4>
+					<p id="Productos_Yogurt"></p>
 				</div>
 			</div>
 			
@@ -76,16 +111,17 @@
 			</h3>
 			<div class="contenedor">
 				<div class="categoria">
-					<img src="./img/queso.jpg" alt="">
-					<h4>Queso</h4>
-				</div>
-				<div class="categoria">
-					<img src="./img/yogurt.jpg" alt="">
+					<img src="./img/Yogurt.png" alt="">
 					<h4>Yogurt</h4>
 				</div>
 				<div class="categoria">
-					<img src="./img/helado2.jpg" alt="">
-					<h4>Helado</h4>
+					<img src="./img/yogurt2.png" alt="">
+					<h4>Yogurt</h4>
+				</div>
+				<div class="categoria">
+					<img src="./img/yogurt3.png" alt="">
+					<h4>Yogurt</h4>
+					<p id="Productos_Helados"></p>
 				</div>
 			</div>
 		</section>
@@ -123,10 +159,10 @@
 	</main>
 	<footer>
 		<div class="contenedor">
-			<p class="copy">Lácteos Miky &copy; 2019</p>
+			<p class="copy">Lácteos Miky &copy; 2019</br>Carretera Central s/n - El Mantaro</p>
 			<div class="sociales">
-				<a href="https://www.facebook.com/L%C3%A1cteos-Miky-320917901860498/"><img src="./img/facebook_logo.ico"></a>
-				<a href="https://plus.google.com/u/0/102272985535351732361"><img src="./img/gplus_logo.ico"></a>
+				<a href="https://www.facebook.com/L%C3%A1cteos-Miky-320917901860498/"><img src="./img/facebook_Logo.ico"></a>
+				<a href="https://plus.google.com/u/0/102272985535351732361"><img src="./img/gplus_Logo.ico"></a>
 				<a href="https://www.youtube.com/watch?v=LmSDQYJXOTc"><img src="./img/youtube_logo.ico"></a>
 				</div>
 		</div>
