@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
 		<link rel="stylesheet" href="css/fontello.css">
 		<link rel="stylesheet" href="css/estilos.css">
-		<link rel="shortcut icon" href="./img/IconoPestaña.ico">
+		<link rel="stylesheet" href="css/animaciones.css">
 		<script src="./js/jquery.js"></script>
     	<script src="./js/jquery.dataTables.min.js"></script>
 	</head>
@@ -39,23 +39,11 @@
 					                    </tr>
 					                    
 					                    <tr>
-					                        <td><a href="#">Inicio</a></td>
+					                        <td><a href="#">css</a></td>
 					                    </tr>
 					                    
 					                    <tr>
-					                        <td><a href="#">Contactos</a></td>
-					                    </tr>
-					                    <tr>
-					                        <td><a href="#">Historia</a></td>
-					                    </tr>
-					                    <tr>
-					                        <td><a href="#">Helado</a></td>
-					                    </tr>
-					                    <tr>
-					                        <td><a href="#">Yogurt</a></td>
-					                    </tr>
-					                    <tr>
-					                        <td><a href="#">Quesos</a></td>
+					                        <td><a href="#">index</a></td>
 					                    </tr>
 					                    
 					                    </tbody>
@@ -69,23 +57,18 @@
 	<main>
 		<section id="banner">
 			<img src="./img/banner1.jpg" title="Banner_Empresa" alt="Imagen que se mostrara al inicio">
-			<div class="contenedor">
+			<div class="contenedor" >
 				<h2>"LA DELICIA FAMILIAR"</h2>
 				<p>Los mejores productos lacteos con la receta insuperable de casa</p>
 				<p><br>Lunes - Domingos: 8am - 5pm</p>
 			</div>
+
 		</section>
-		
 		<div class="responsive">
-			<div class="col-content">
-					<h3><span>Contáctanos</span></h3>
+			<div class="col-content agradecimiento">
+					<h3><span >Gracias Por Enviar Tu Opinion, Pronto Estaremos en Contacto Contigo</span></h3>
 						 <br>
-					<form onsubmit="return validar();" method="post" action="./paginagradecimiento.html#banner">
-						<input name="name" id="name"placeholder="Nombre" type="text"  /><br/>
-						<input name="email" id="email" placeholder="Correo Electronico" type="email" /><br/>
-						<textarea name="message" id="message" placeholder="Mensaje"  ></textarea>
-						<input type="submit" value="Enviar" class="submit" />
-					</form>
+					<img width="250px" src="./img/HeladoGracias.png" alt="Img_Helado_Gracias" title="Img_Helado_Gracias" class="animated swing slower go" >
 			</div>
 			<div class="col-multimedia">
 				<h3>¿Quieres Saber Más de Nosotros? Mira lo que tenemos para ti </h3>
@@ -111,81 +94,11 @@
 		</div>
 	</footer>
 	<script type="text/javascript">
-		function validar(){
-			var Nombre1, Correo1, Mensaje1,Expresion1;
-			Nombre1 = document.getElementById("name").value;	
-			Correo1 = document.getElementById("email").value;
-			Mensaje1 = document.getElementById("message").value;
-			
-			Expresion1 = /\w+@\w+\.+[a-z]/;
-
-			if (Nombre1 === "" || Correo1 === "" || Mensaje1 ==="") 
-			{
-				alert("Todos los Campos Los Campos son Obligatorios");
-				if (Nombre1 === "") {
-					document.getElementById("name").style.boxShadow='red 0px 0px 10px';	
-				}
-				else{
-					document.getElementById("name").style.boxShadow='green 0px 0px 10px';
-				}
-				if (Correo1 === "") {
-					document.getElementById("email").style.boxShadow='red 0px 0px 10px';	
-				}
-				else{
-					document.getElementById("email").style.boxShadow='green 0px 0px 10px';
-				}
-				if (Mensaje1 ==="") {
-					document.getElementById("message").style.boxShadow='red 0px 0px 10px';
-				}
-				else{
-				document.getElementById("message").style.boxShadow='green 0px 0px 10px';
-				}
-				return false;
-			}
-			
-			
-			if (Nombre1.length > 5) {
-				alert("El Nombre es muy Largo");
-				document.getElementById("name").style.boxShadow='red 0px 0px 10px';
-				document.getElementById("email").style.boxShadow='green 0px 0px 10px';
-				document.getElementById("message").style.boxShadow='green 0px 0px 10px';
-				return false;	
-			}
-
-
-			if (Correo1.length > 100) {
-				alert("El Correo es muy Largo");
-				document.getElementById("email").style.boxShadow='red 0px 0px 10px';
-				document.getElementById("message").style.boxShadow='green 0px 0px 10px';
-				document.getElementById("name").style.boxShadow='green 0px 0px 10px';
-				return false;	
-			}
-
-			if (!Expresion1.test(Correo1)) {
-				alert("El Correo No Válido");
-				return false;		
-			}
-
-			if (Mensaje1.length > 200) {
-				alert("El Mensaje es muy Largo");
-				document.getElementById("message").style.boxShadow='red 0px 0px 10px';
-				document.getElementById("email").style.boxShadow='green 0px 0px 10px';
-				document.getElementById("name").style.boxShadow='green 0px 0px 10px';
-				return false;	
-			}
-			else{
-				location.href="./paginagradecimiento.html";
-				return true;
-			}
-
-		}
-
 		function LimpiarInputBuscar()
 		{
 			document.getElementById("bar").value = "";
 			$(".content-search").fadeOut(300);
-		}
-				
+		}				
 	</script>
 	<script src="./js/search.js"></script>
 </body>

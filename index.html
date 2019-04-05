@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
 		<link rel="stylesheet" href="css/fontello.css">
 		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="shortcut icon" href="./img/IconoPestaña.ico">
+		<script src="./js/jquery.js"></script>
+    	<script src="./js/jquery.dataTables.min.js"></script>
 	</head>
 <body>
 	<header>
@@ -15,13 +18,38 @@
 			<input type="checkbox" id="menu-bar">
 			<label class="icon-menu" for="menu-bar"></label>
 			<nav class="menu">
-				<a href="#banner">Inicio</a>
-				<a href="#Iralblog">Nosotros</a>
+				<a href="#banner" id="Iralbanner">Inicio</a>
+				<a href="#Iralblog" id="Iralblog1">Nosotros</a>
 				<a href="./productos.html">Productos</a>
 				<a href="./contactos.html">Contacto</a>
 				<div class="Buscar">
 					<img src="./img/iconoBuscar.ico" title="Icono_Buscar" alt="Icono de busqueda para el Usuario">
-					<input type="text" id="bar">
+					<input type="search" id="bar"placeholder="Buscar aquí" onblur="LimpiarInputBuscar()">
+						<div class="content-search">
+					        <div class="content-table">
+					            <table id="table">
+					                <thead>
+					                    <tr>
+					                        <td></td>
+					                    </tr>
+					                </thead>
+					                <tbody>
+					                    <tr>
+					                        <td><a href="./productos.html">Productos</a></td>
+					                    </tr>
+					                    
+					                    <tr>
+					                        <td><a href="#">css</a></td>
+					                    </tr>
+					                    
+					                    <tr>
+					                        <td><a href="#">index</a></td>
+					                    </tr>
+					                    
+					                    </tbody>
+					            </table>
+					        </div>
+					    </div>
 				</div>
 			</nav>
 		</div>
@@ -46,7 +74,7 @@
 				La información que necesita saber sobre nosotros, nuestros productos, novedades, promociones y la manera más rápida de llegar a nuestro local.<br>
 				
 				Lacteos Miky los espera con la coordialidad de siempre.. dónde podrá disfrutar cada uno de nuestros productos con la calidez de una hogar.
-				<div id="Iralblog"></div>
+				
 				</p>
 				<br>
 				</div>
@@ -55,6 +83,7 @@
 				</div>
 		</section>
 		<section id="blog">
+			<div id="Iralblog"></div>
 			<div id="blog_Contenido">
 				<h3>NUESTRA HISTORIA</h3>
 				<p><br>Lácteos Miky empezó como un negocio familiar. Su origen se remonta al año 2012, donde el actual gerente general y dueño de la empresa, empezó con la producción de quesos artesanales. Posteriormente empezó con la venta de otros productos lácteos que vendía a los alrededores de su vivienda. Por la calidad diferenciada de los productos, la demanda empezó a aumentar poco a poco, y en ese mismo sentido, se tuvo que ampliar la cantidad de trabajadores, máquinas y recursos para la empresa. 
@@ -112,5 +141,69 @@
 				</div>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		function Mensajes()
+		{
+			var text = undefined;
+			text = prompt("Ingrese un texto:","Valor por Defecto");
+			/*Validar que siempre sea una cadena*/
+			text = text + "";
+
+			if (text && text.length > 0) 
+			{
+			console.info("Ingreso: ",text);	
+
+			/*Escribir en JavaScript*/
+			document.write(text);
+			}
+			else
+			{
+				console.error("No ingreso ningún valor");
+			}
+		}
+		//Mensajes();
+
+		
+		//Otra Funcion
+		function AdvancedSearch(keyword)
+		{
+			console.log(":: Buscando: ",keyword)
+
+		}
+		function search()
+		{
+			var o = document.getElementById("bar");
+
+			if (o.value && o.value.length > 0) {
+			
+			//alert("Estamos buscando a nemo");
+			AdvancedSearch(o.value);	
+			}
+			else
+			{
+				console.error("No ingreso ningún valor");
+			}
+			
+		}
+		function LimpiarInputBuscar()
+		{
+			document.getElementById("bar").value = "";
+			$(".content-search").fadeOut(300);
+		}
+
+	</script>
+	<script src="./js/search.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+		jQuery("#Iralblog1").click(function(){jQuery("body,html").animate({scrollTop:jQuery("#Iralblog").offset().top-70},1e3)})
+		});
+	</script>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+		jQuery("#Iralbanner").click(function(){jQuery("body,html").animate({scrollTop:0},1e3)})
+		});
+	</script>
+
 </body>
 </html>
