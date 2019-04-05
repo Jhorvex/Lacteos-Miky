@@ -240,6 +240,20 @@ input, textarea {
 		background: #2984bd;
 		margin-bottom: 2%;	
 		}
+		/*Banner*/
+		.content-search{
+		    width: 100%;
+		    height: 100vh;
+		    position: fixed;
+		    top: 290px;
+		    left: 0;
+		    background: rgba(0,0,0,0.3);
+		    display: none;
+		    
+		}
+		tbody tr td a{
+		    text-align: left;
+		}
 
 		/* Pagina Contactos */
 		.col-content {
@@ -393,7 +407,7 @@ input, textarea {
 		background: #2984bd;
 		margin-bottom: 2%;	
 		}
-
+		
 		/* Productos */
 		/*Informacion de las Categorias*/
 				
